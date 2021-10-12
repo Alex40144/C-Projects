@@ -8,10 +8,10 @@ int main(void) {
     float mark; //max mark
     int counter = 0;
  
-    printf("Enter maximum mark avaliable: ");
+    printf("Enter maximum mark available: ");
     scanf("%f", &mark);
  
-    while (counter < 3) { //loop three times recording informatino from console
+    while (counter < 3) { //loop three times recording information from console
         printf("enter Student ID: ");
         scanf("%d", &ids[counter]);
         printf("Enter student name: ");
