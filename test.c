@@ -1,21 +1,16 @@
 #include <stdio.h>
-#include <windows.h>
- 
-int main(void) {
-    int tiles[3][3][3];
-    for (int i = 0; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            for(int k = 0; k < 3; k++){
-                tiles[i][j][k] = rand() % 100;
-            }
-        }
-    }
 
-    for (int i = 0; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            for(int k = 0; k < 3; k++){
-                printf("%d\n", tiles[i][j][k]);
-            }
-        }
-    }
+int pb(int n) {
+    if (n==0) 
+        return 0;
+    else 
+        return (n % 2) + 10 * pb(n / 2);
+}
+
+int main(void) {
+    printf("%d\n", pb(1));
+    printf("%d\n", pb(2));
+    printf("%d\n", pb(3));
+    printf("%d\n", pb(4));
+    printf("%d\n", pb(5));
 }
