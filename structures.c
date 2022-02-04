@@ -18,7 +18,7 @@ struct dimension
 
 
 
-
+/*
 int main(void) {
     struct dimension obj;
     obj.x = 4.2;
@@ -30,4 +30,4 @@ int main(void) {
     print("volume: %f", obj.volume);
 
     return 0;
-}
+}*/
